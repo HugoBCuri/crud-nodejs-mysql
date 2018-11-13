@@ -48,8 +48,6 @@ Para rodar basta
 ```bash
 node src/app.js
 ```
+Agora basta entrar na página
 
-
-# links
-- [bootstrap 4 theme](https://bootswatch.com/4/lux/bootstrap.min.css)
-
+- [localhost:8080](http://localhost:8080)

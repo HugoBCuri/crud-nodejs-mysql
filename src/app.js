@@ -21,7 +21,7 @@ app.use(myConnection(mysql, {
   user: 'root',
   password: 'root',
   port: 3306,
-  database: 'teste'
+  database: 'crudnodejsmysql'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
