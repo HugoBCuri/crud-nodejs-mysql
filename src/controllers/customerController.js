@@ -35,6 +35,17 @@ controller.edit = (req, res) => {
   });
 };
 
+controller.show = (req, res) => {
+  const { id } = req.params;
+  req.getConnection((err, conn) => {
+    conn.query("SELECT * FROM customer WHERE id = ?", [id], (err, rows) => {
+      res.render('customers_show', {
+        data: rows[0]
+      })
+    });
+  });
+};
+
 controller.update = (req, res) => {
   const { id } = req.params;
   const newCustomer = req.body;
